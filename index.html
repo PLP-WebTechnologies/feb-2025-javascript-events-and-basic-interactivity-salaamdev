@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Interactivity Assignment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>JavaScript Interactive Page</h1>
+            <p>A simple demonstration of JavaScript events and interactivity</p>
+        </header>
+
+        <section class="event-handling">
+            <h2>Event Handling</h2>
+            
+            <!-- Button click event -->
+            <div class="event-item">
+                <h3>Button Click</h3>
+                <button id="clickBtn">Click Me!</button>
+                <p id="clickResult">Try clicking the button above</p>
+            </div>
+            
+            <!-- Hover effect -->
+            <div class="event-item">
+                <h3>Hover Effect</h3>
+                <div id="hoverBox">Hover over me</div>
+            </div>
+            
+            <!-- Keypress detection -->
+            <div class="event-item">
+                <h3>Key Press Detection</h3>
+                <input type="text" id="keypressInput" placeholder="Type something here...">
+                <p id="keypressResult">Press any key in the input above</p>
+            </div>
+            
+            <!-- Double click bonus -->
+            <div class="event-item">
+                <h3>Secret Action (Double-click)</h3>
+                <div id="secretBox">Double-click me for a surprise!</div>
+            </div>
+        </section>
+
+        <section class="interactive-elements">
+            <h2>Interactive Elements</h2>
+            
+            <!-- Color changing button -->
+            <div class="interactive-item">
+                <h3>Color Change Button</h3>
+                <button id="colorBtn">Change My Color</button>
+            </div>
+            
+            <!-- Simple image gallery -->
+            <div class="interactive-item">
+                <h3>Simple Image Gallery</h3>
+                <div class="gallery">
+                    <img id="galleryImage" src="https://picsum.photos/id/237/300/200" alt="Gallery Image">
+                    <div class="gallery-controls">
+                        <button id="prevBtn">Previous</button>
+                        <button id="nextBtn">Next</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Accordion content -->
+            <div class="interactive-item">
+                <h3>Accordion Content</h3>
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <div class="accordion-header">Section 1</div>
+                        <div class="accordion-content">
+                            <p>This is the content for section 1. Click on any header to toggle content visibility.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">Section 2</div>
+                        <div class="accordion-content">
+                            <p>Here's some content for section 2. Accordions are great for organizing information!</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">Section 3</div>
+                        <div class="accordion-content">
+                            <p>And finally, the content for section 3. Pretty cool, right?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="form-validation">
+            <h2>Form Validation</h2>
+            <form id="validationForm">
+                <div class="form-group">
+                    <label for="name">Name (required)</label>
+                    <input type="text" id="name" required>
+                    <span class="error" id="nameError"></span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email (required)</label>
+                    <input type="email" id="email" required>
+                    <span class="error" id="emailError"></span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Password (min 8 characters)</label>
+                    <input type="password" id="password" required>
+                    <span class="error" id="passwordError"></span>
+                </div>
+                
+                <button type="submit" id="submitBtn">Submit</button>
+            </form>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
